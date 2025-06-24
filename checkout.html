@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | HUFT</title>
+    <link rel="icon"
+        href="//headsupfortails.com/cdn/shop/files/favicon.png?crop=center&height=32&v=1667987456&width=32">
+    <link rel="stylesheet" href="checkout.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="back-btn" onclick="goBack()">
+        <div class="checkout-back">
+            <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/logo_1.svg?v=1709198253" alt="HUFT Logo">
+        </div>
+    </button>
+
+    <div class="checkout-container">
+
+        <!-- Left Side -->
+        <div class="checkout-left">
+            <h2>Contact</h2>
+            <input type="email" placeholder="Email" required />
+            <label class="checkbox">
+                <input type="checkbox" checked />
+                Keep me updated with order updates via WhatsApp, SMS & Email
+            </label>
+
+            <h2>Shipping & Delivery</h2>
+            <form id="shipping-form">
+                <div class="form-row">
+                    <input type="text" placeholder="First name" required />
+                    <input type="text" placeholder="Last name" required />
+                </div>
+                <input type="text" placeholder="Address" required />
+                <input type="text" placeholder="Apartment, suite, etc. (optional)" />
+                <div class="form-row">
+                    <input type="text" placeholder="City" required />
+                    <input type="text" placeholder="State" required />
+                    <input type="text" placeholder="PIN code" required />
+                </div>
+                <input type="tel" placeholder="Phone" required />
+                <label class="checkbox">
+                    <input type="checkbox" />
+                    Save this information for next time
+                </label>
+            </form>
+
+            <h2>Available Shipping</h2>
+            <div class="shipping-msg">Enter your shipping address to view available shipping methods.</div>
+
+            <h2>Select Payment Method</h2>
+            <div class="payment-method">
+                <!-- Option 1: Online Payments -->
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="online" checked />
+                    <div class="option-content">
+                        <div>
+                            <strong>Cashfree Payments</strong>
+                            <div class="subtext">(UPI, Cards, Wallets, NetBanking)</div>
+                        </div>
+                        <div class="payment-icons">
+                            <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/upi.CmgCfll8.svg"
+                                alt="UPI" />
+                            <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/visa.sxIq5Dot.svg"
+                                alt="Visa" />
+                            <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/master.CzeoQWmc.svg"
+                                alt="MasterCard" />
+                            <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/rupay.Bl62X6PG.svg"
+                                alt="RuPay" />
+                            <div class="more-badge-wrapper">
+                                <div class="more-badge">+9</div>
+                                <div class="payment-tooltip">
+                                    <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/paytm.3Y8fYkRh.svg"
+                                        alt="Paytm" />
+                                    <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/american_express.C3z4WB9r.svg"
+                                        alt="Amex" />
+                                    <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/discover.C7UbFpNb.svg"
+                                        alt="Discover" />
+                                    <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/amazon.Cc9asQL6.svg"
+                                        alt="Amazon" />
+                                    <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/diners_club.B9hVEmwz.svg"
+                                        alt="Diners" />
+                                    <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/airtel_money.BWXMtn34.svg"
+                                        alt="Airtel" />
+                                    <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/freecharge.D_ajjmTh.svg"
+                                        alt="Freecharge" />
+                                    <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/ola_money.CzlfykZW.svg"
+                                        alt="Mobikwik" />
+                                    <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/c1.en/assets/mobikwik.BpCHsfnx.svg"
+                                        alt="MPesa" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Online Payment Description -->
+                <div class="payment-desc" id="online-desc">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" height="60" alt="browser" />
+                    <p>After clicking <strong>“Pay now”</strong>, you’ll be redirected to Cashfree Payments to complete
+                        your purchase securely.</p>
+                </div>
+
+                <!-- Option 2: COD -->
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="cod" />
+                    <div class="option-content">
+                        <strong>Cash on Delivery (COD)</strong>
+                    </div>
+                </label>
+            </div>
+
+
+
+            <h2>Billing address</h2>
+            <div class="radio-block">
+                <label>
+                    <input type="radio" name="billing" value="same" checked />
+                    Same as shipping address
+                </label>
+            </div>
+
+            <div class="radio-block">
+                <label>
+                    <input type="radio" name="billing" value="different" />
+                    Use a different billing address
+                </label>
+            </div>
+
+
+            <!-- Hidden billing form -->
+            <div id="billing-form" class="hidden">
+                <input type="text" placeholder="Country/Region" value="India" readonly />
+                <div class="form-row">
+                    <input type="text" placeholder="First name" />
+                    <input type="text" placeholder="Last name" />
+                </div>
+                <input type="text" placeholder="Address" />
+                <input type="text" placeholder="Apartment, suite, etc. (optional)" />
+                <div class="form-row">
+                    <input type="text" placeholder="City" />
+                    <input type="text" placeholder="State" />
+                    <input type="text" placeholder="PIN code" />
+                </div>
+                <input type="tel" placeholder="Phone (optional)" />
+            </div>
+            <button class="checkout-btn">Pay Now</button>
+        </div>
+
+        <!-- Right Side -->
+        <div class="checkout-right">
+            <h2>Order Summary</h2>
+            <div id="order-summary-container" class="order-summary">
+                <div class="product">
+                    <div class="product-img-wrapper">
+                        <img src="https://headsupfortails.com/cdn/shop/files/DSC_1205_5a5f3013-08a1-4d9d-8b5b-3320f6e91207.jpg?v=1743594146"
+                            alt="product" class="product-img">
+                        <div class="product-qty-badge">1</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">TLC Dory Squeaky Plush Toy For Puppies & Small Dogs - Blue</p>
+                    </div>
+                    <div class="product-price">₹299.00</div>
+                </div>
+            </div>
+
+
+            <div class="coupon-section">
+                <input type="text" placeholder="Enter coupon code" class="coupon-input" />
+                <button class="apply">Apply</button>
+            </div>
+
+            <div class="totals">
+                <div><span>Subtotal</span><span id="checkout-subtotal">₹998</span></div>
+                <div><span>Shipping</span><span id="checkout-shipping">Free</span></div>
+                <div class="total"><span>Total</span><span id="checkout-total">₹998</span></div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+
+</html>
