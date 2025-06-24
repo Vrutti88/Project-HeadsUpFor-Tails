@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe Now - Monthly Pet Box</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="checkout.css">
+
+  <style>
+    .subscribe-form-section {
+  background: #fff;
+  padding: 3rem 1rem;
+  font-family: 'Rubik', sans-serif;
+  color: #333;
+}
+
+.subscribe-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff6f0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 2px dashed #ff6a00;
+}
+
+.subscribe-container h2 {
+  color: #ff6a00;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.subscribe-container p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.summary {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 1.2rem 0;
+}
+
+button[type="submit"] {
+  background-color: #ff6a00;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #e65a00;
+}
+
+  </style>
+</head>
+<body>
+
+    <button class="back-btn" onclick="goBack()">
+        <div class="checkout-back">
+            <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/logo_1.svg?v=1709198253" alt="HUFT Logo">
+        </div>
+    </button>
+  <section class="subscribe-form-section">
+    <div class="subscribe-container">
+      <h2>📦 Subscribe to the Monthly Pet Box</h2>
+      <p>Just ₹799/month — curated treats, toys & grooming delivered to your door!</p>
+
+      <form id="subscriptionForm" onsubmit="return handleSubscribe(event)">
+        <div class="form-group">
+          <label for="ownerName">Your Name:</label>
+          <input type="text" id="ownerName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="petName">Pet's Name:</label>
+          <input type="text" id="petName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="petType">Pet Type:</label>
+          <select id="petType" required>
+            <option value="">-- Select --</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="petSize">Pet Size:</label>
+          <select id="petSize" required>
+            <option value="">-- Select --</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="theme">Theme Preference (Optional):</label>
+          <select id="theme">
+            <option value="">Surprise Me!</option>
+            <option value="birthday">Birthday Box</option>
+            <option value="festival">Festival Themed</option>
+            <option value="seasonal">Seasonal Special</option>
+          </select>
+        </div>
+
+        <p class="summary">💰 <strong>Total:</strong> ₹799/month</p>
+
+        <button type="submit">Confirm Subscription</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function handleSubscribe(event) {
+      event.preventDefault();
+      alert("🎉 Subscription Confirmed! Your first box ships soon!");
+      document.getElementById("subscriptionForm").reset();
+    }
+  </script>
+  <script src="checkout.js"></script>
+</body>
+</html>
