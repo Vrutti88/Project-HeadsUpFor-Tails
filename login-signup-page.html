@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heads Up For Tails - Signup/Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon"
+        href="//headsupfortails.com/cdn/shop/files/favicon.png?crop=center&height=32&v=1667987456&width=32">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #fff8f0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #ff6a00;
+      color: white;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      z-index: 10;
+    }
+
+    .back-button:hover {
+      background-color: #e65c00;
+    }
+
+    .container {
+      background: #ffffff;
+      width: 95%;
+      max-width: 520px;
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 15px 40px rgba(255, 106, 0, 0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .logo img {
+      width: 140px;
+    }
+
+    .toggle-buttons {
+      display: flex;
+      justify-content: space-between;
+      background: #fff1e0;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .toggle-buttons button {
+      flex: 1;
+      padding: 14px;
+      border: none;
+      background: transparent;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ff6a00;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: background 0.3s;
+    }
+
+    .toggle-buttons button.active {
+      background-color: #ff6a00;
+      color: white;
+    }
+
+    form {
+      display: none;
+    }
+
+    form.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 18px;
+      border: 1px solid #ffd2b3;
+      border-radius: 12px;
+      font-size: 16px;
+      background-color: #fffaf5;
+    }
+
+    input:focus, select:focus {
+      border-color: #ff6a00;
+      outline: none;
+    }
+
+    button.submit {
+      background-color: #ff6a00;
+      color: white;
+      border: none;
+      padding: 14px;
+      width: 100%;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button.submit:hover {
+      background-color: #e65c00;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      .back-button {
+        top: 12px;
+        left: 12px;
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="back-button" onclick="goBack()">← Back</button>
+
+  <div class="container">
+    <div class="logo">
+      <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/logo_1.svg?v=1709198253" alt="HUFT Logo" />
+    </div>
+
+    <div class="toggle-buttons">
+      <button class="active" onclick="switchForm('signup')">Signup</button>
+      <button onclick="switchForm('login')">Login</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button class="submit">Login</button>
+    </form>
+
+    <!-- Signup Form (Default Active) -->
+    <form id="signupForm" class="active">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="number" placeholder="Age" min="1" max="100" required />
+      <select required>
+        <option value="" disabled selected>Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+      <input type="password" placeholder="Password" required />
+      <button class="submit">Signup</button>
+    </form>
+  </div>
+
+  <script>
+    function switchForm(type) {
+      const loginForm = document.getElementById('loginForm');
+      const signupForm = document.getElementById('signupForm');
+      const buttons = document.querySelectorAll('.toggle-buttons button');
+
+      if (type === 'login') {
+        loginForm.classList.add('active');
+        signupForm.classList.remove('active');
+        buttons[0].classList.remove('active'); // Signup
+        buttons[1].classList.add('active');    // Login
+      } else {
+        signupForm.classList.add('active');
+        loginForm.classList.remove('active');
+        buttons[0].classList.add('active');    // Signup
+        buttons[1].classList.remove('active'); // Login
+      }
+    }
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
