@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog-Toys</title>
+    <link rel="icon"
+        href="//headsupfortails.com/cdn/shop/files/favicon.png?crop=center&height=32&v=1667987456&width=32">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="small-animal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement">
+        <a href="#">Toys that make tails wag!</a>
+    </div>
+
+    <!-- Header with Logo, Search, Buttons -->
+    <div class="main-header">
+        <a href="index.html">
+            <div class="logo">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/logo_1.svg?v=1709198253"
+                    alt="HUFT Logo">
+            </div>
+        </a>
+        <div class="search-box-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="" id="search-input">
+        </div>
+        <div class="header-buttons">
+            <button class="login-btn" id="login-btn">Login/Sign Up</button>
+            <span class="cart-icon" id="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count" class="cart-count-badge">0</span>
+            </span>
+            <span class="pincode"><i class="fa-solid fa-location-dot"></i>110001</span>
+            <span class="wishlist-icon" id="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+                <span id="wishlist-count" class="cart-count-badge">0</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="dropdown-header">
+        <ul>
+            <li class="drop">
+                <a class="bottom-boreder" href="#">Dogs <span><i class="fa-solid fa-angle-down"></i></span></a>
+                <div class="dropdown-menu">
+                    <div class="menu-heading">
+                        <h2>Shop For</h2>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="menu-item">
+                            <a href="dog-food.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/food_43cf05d7-fa03-4b9b-8ec6-8f8daef7d34c.png?v=1741065624"
+                                    alt="">
+                                <p>Food</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-treat.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/treats_c65e2ef8-2b9f-40ff-82f9-b04f11b7ea0d.png?v=1741065624"
+                                    alt="">
+                                <p>Treats</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-walk.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/walk_essentials_bc861461-628c-4524-a947-49aa5fb3a044.png?v=1741065624"
+                                    alt="">
+                                <p>Walk Essentials</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-grooming.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/grooming_6ff30a58-75b8-4e43-b35d-75fee30996c8.png?v=1741065624"
+                                    alt="">
+                                <p>Grooming</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-bowls.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/bowls_diners.png?v=1741065624"
+                                    alt="">
+                                <p>Bowls and Dinners</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-toys.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/toys_ff3e9cc4-1bd8-4338-b81c-802161bc6505.png?v=1741065624"
+                                    alt="">
+                                <p>Toys</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-clothes.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/clothing_accessories_7b533b21-54e5-44f8-833c-dbcc4348a49a.png?v=1741065624"
+                                    alt="">
+                                <p>Clothing & Accessories</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-travel.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/travel_supplies_35d150ef-801a-444f-a988-0536ee547572.png?v=1741065624"
+                                    alt="">
+                                <p>Travel Supplies</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-health.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/health_hygiene.png?v=1741065625"
+                                    alt="">
+                                <p>Health & Hygiene</p>
+                            </a>
+                        </div>
+                    </div>
+            </li>
+            <li class="drop">
+                <a class="bottom-boreder" href="#">Cats <span><i class="fa-solid fa-angle-down"></i></span></a>
+                <div class="dropdown-menu">
+                    <div class="menu-heading">
+                        <h2>Shop For</h2>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="menu-item">
+                            <a href="cat-food.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/food_b40e355f-035d-4804-a55d-a6132f7cc220.png?v=1741066010"
+                                    alt="">
+                                <p>Food</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-treat.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/treats_1f30fe66-9d90-4247-b3b8-c52703e78ddb.png?v=1741066010"
+                                    alt="">
+                                <p>Treats</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-litter.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/litter_supplies.png?v=1741066010"
+                                    alt="">
+                                <p>Litter & Supplies</p>
+                            </a>
+                        </div>
+                        <!-- <div class="menu-item">
+                            <a href="cat-crater.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/crates_carriers_8f049b8e-ff05-40a8-a6a5-eebd8a098fd8.png?v=1741066010"
+                                    alt="">
+                                <p>Crates & Carriers</p>
+                            </a>
+                        </div> -->
+                        <div class="menu-item">
+                            <a href="cat-bed.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/trees_beds_scratchers.png?v=1741066010"
+                                    alt="">
+                                <p>Trees, Beds & Scratchers</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-toys.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/toys_ea3ecf45-bbf3-45bf-bdb1-17688b192f07.png?v=1741066010"
+                                    alt="">
+                                <p>Toys</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-grooming.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/grooming_49224043-c37f-43db-80a8-b0c7577b2505.png?v=1741066010"
+                                    alt="">
+                                <p>Grooming</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-accessories.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/collars_accessories.png?v=1741066009"
+                                    alt="">
+                                <p>Collars & Accessories</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-bowls.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/bowls_diners_bee7eeec-2ec8-4657-bc5f-d3441d9c0eb2.png?v=1741066010"
+                                    alt="">
+                                <p>Bowls & Dinners</p>
+                            </a>
+                        </div>
+                    </div>
+            </li>
+            <li class="drop">
+                <a class="bottom-boreder" href="#">Small Animals <span><i class="fa-solid fa-angle-down"></i></span></a>
+                <div class="dropdown-menu">
+                    <div class="menu-heading">
+                        <h2>Shop For</h2>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="menu-item">
+                            <a href="small-animal.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/rabbits_24a0bf74-8db2-4622-8f22-fe245af6495d.png?v=1741066269"
+                                    alt="">
+                                <p>Rabbits</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="small-animal.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/hamsters_407f5853-1d48-41c0-bdfc-315f6c5dab90.png?v=1741066269"
+                                    alt="">
+                                <p>Hamsters</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="small-animal.html">
+                                <img src="https://bing.com/th/id/BCO.5fe03bab-35ca-4f89-9bfa-4fc47708ec6a.png" alt="">
+                                <p>Guinea pig</p>
+                            </a>
+                        </div>
+                    </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="upper-img-container">
+        <div class="upper-img">
+            <img src="https://headsupfortails.com/cdn/shop/collections/toys_web_eac87e19-c729-4601-ab7e-3cb631c568be.webp?v=1744103358"
+                alt="">
+        </div>
+    </div>
+
+
+    <div class="main-div">
+        <div class="upper-div">
+            <div class="heading-div">
+                <h2>Dog Toys</h2>
+            </div>
+            <div class="button-slider">
+                <div class="selection-wrapper" id="catScrollWrapper">
+                    <div class="selection-div">
+                        <a href="">Brand</a>
+                        <a href="">Shop For</a>
+                        <a href="">Life Stage</a>
+                        <a href="">Breed Size</a>
+                        <a href="">Product Type</a>
+                        <a href="">Price</a>
+                        <a href="">Sub Category</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="outer-collection">
+        <!-- <div class="left-side">
+            <div class="list-menu active">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/food_630b28d9-9c24-4651-bdab-af175fc31817.png?v=1744700616"
+                    alt="">
+                <span>All Dog Food</span>
+            </div>
+            <div class="list-menu">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Fil_dryfood.png?v=1742546683" alt="">
+                <span>Dry Food</span>
+            </div>
+            <div class="list-menu">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Fil_wetfood.png?v=1743587692" alt="">
+                <span>Wet Food</span>
+            </div>
+            <div class="list-menu">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Fil_grainfree.png?v=1740746447" alt="">
+                <span>Grain Food</span>
+            </div>
+            <div class="list-menu">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Fil_puppyfood.png?v=1742546790" alt="">
+                <span>Puppy Food</span>
+            </div>
+            <div class="list-menu">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Fil_hypoallergenic.png?v=1740746447"
+                    alt="">
+                <span>Hypoallergenic</span>
+            </div>
+            <div class="list-menu">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Fil_veterinaryfood.png?v=1741609213"
+                    alt="">
+                <span>Veterinary Food</span>
+            </div>
+            <div class="list-menu">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Fil_foodtoppersgravy.png?v=1743588412"
+                    alt="">
+                <span>Food Toppers & Gravy</span>
+            </div>
+            <div class="list-menu">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Fil_chickenfree.png?v=1742546755"
+                    alt="">
+                <span>Chicken Free</span>
+            </div>
+        </div> -->
+        <!-- <div class="right-side"></div> -->
+
+        <div class="items-container" data-brand="Oxbow" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="1400" data-subcategory="Hamster & Guinea Pig Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/DSC_7681.jpg?v=1739042158" alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.84</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Heads Up For Tails</a>
+                <a href="#">
+                    <p>HUFT Bull Long-Legs Plush Toy For Dog - Black & Grey.</p>
+                </a>
+            </div>
+            <div class="price">₹999</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="500" data-subcategory="Guinea Pig Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/DSC_2527copy.jpg?v=1739040809"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.9</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Dash Dogn</a>
+                <a href="#">
+                    <p>Dash Dog Silly Sea Lion Squeaky Plush Toy For Dog - Purple</p>
+                </a>
+            </div>
+            <div class="price">₹699</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/5_3_24fb246d-4e1d-49c9-9b35-8d33ad15d3b6.jpg?v=1730812289"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.8</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Tail Lovers Company</a>
+                <a href="#">
+                    <p>TLC Bone & Candy Rope Toy For Dog - Navy & White</p>
+                </a>
+            </div>
+            <div class="price">₹349</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/products/TrixieTurtleAnimalSoundDogPlushToy-40cm.jpg?v=1665662233"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.95</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Trixie</a>
+                <a href="#">
+                    <p>Trixie Turtle Animal Sound Dog Plush Toy - 40 cm</p>
+                </a>
+            </div>
+            <div class="price">₹1,349</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/6976551700260_4.jpg?v=1715837030" alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.81</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">FOFOS</a>
+                <a href="#">
+                    <p>FOFOS Turtle Ocean Animal Squeaky Chew Toy For Dog</p>
+                </a>
+            </div>
+            <div class="price">₹660</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/35585523316.jpg?v=1745573036"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.89</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">KONG</a>
+                <a href="#">
+                    <p>KONG Comfort Pups Goldie Plush Toy For Dog - Brown - M</p>
+                </a>
+            </div>
+            <div class="price">₹1,375</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/Frame-2023-07-27T132428.jpg?v=1732774830"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.67</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">M-Pets</a>
+                <a href="#">
+                    <p>M-Pets Arco Ball Dog Chew Toy Chew Toy</p>
+                </a>
+            </div>
+            <div class="price">₹599</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/products/Elephant.jpg?v=1677675355" alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 5.0</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Nutrapet</a>
+                <a href="#">
+                    <p>Nutrapet The Docile Elephant Dog Toy</p>
+                </a>
+            </div>
+            <div class="price">₹799</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/products/OutwardHound_NinaOttosson_DogWorkerComposite-Spin_Scoot_Treat-InteractiveDogToy-Level3.jpg?v=1663045392"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.8</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Outward Hound</a>
+                <a href="#">
+                    <p>Outward Hound (Nina Ottosson) Dog Worker Composite...</p>
+                </a>
+            </div>
+            <div class="price">₹2,599</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/products/PetsportTwistedChewsSpringTug_a4c0e086-202b-42b8-8552-508f5898e91f.jpg?v=1685453434" alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.83</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Petsport</a>
+                <a href="#">
+                    <p>Petsport Twisted Chews Spring Tug For Dogs - 24inch</p>
+                </a>
+            </div>
+            <div class="price">₹1,095</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/products/DSC_4588.jpg?v=1675507785" alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.86</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Paws For Earth</a>
+                <a href="#">
+                    <p>Paws For Earth Wool Felt Owl Plush Toy For Dogs</p>
+                </a>
+            </div>
+            <div class="price">₹379</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/818786019471_4.jpg?v=1747300334" alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.83</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Zippy Paws</a>
+                <a href="#">
+                    <p>Zippy Paws Bear & Moose Squeakie Pads Plush Toy For Dog</p>
+                </a>
+            </div>
+            <div class="price">₹1,300</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/618940435020.jpg?v=1745409315"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.9</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">JW Pet</a>
+                <a href="#">
+                    <p>JW Pet Rockin Treat Ball Toy For Dog - Assorted</p>
+                </a>
+            </div>
+            <div class="price">₹1,650</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/4897109600721_1.jpg?v=1747135306"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 5.0</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">JOYSER</a>
+                <a href="#">
+                    <p>JOYSER Cageball With Plush Funhead Chew Toy For Dog</p>
+                </a>
+            </div>
+            <div class="price">₹1,200</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/414083-money-monopoly-dog-toy-2.jpg?v=1734529517"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.95</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Hasbro</a>
+                <a href="#">
+                    <p>Hasbro Mr. Monopoly With Money Bag Squeak & Crinkle Plush Toy</p>
+                </a>
+            </div>
+            <div class="price">₹995</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/Chuckit_IndoorFumblerToyforDogs_2.jpg?v=1698995634"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.92</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Chuckit!</a>
+                <a href="#">
+                    <p>Chuckit Indoor Fumbler Dog Toy - Orange & Blue</p>
+                </a>
+            </div>
+            <div class="price">₹1,399</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/PetstagesOrkaBoneDogChewToy_73396419-381e-403a-ac9f-63f823f8f8f0.jpg?v=1689756553"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.92</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Petstages</a>
+                <a href="#">
+                    <p>Petstages Orka Bone Dog Chew Toy</p>
+                </a>
+            </div>
+            <div class="price">₹525</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/products/747473719182_bb01a015-7866-4981-bd8a-e9537cb60d2f.jpg?v=1578381899"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 5.0</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">West Paw</a>
+                <a href="#">
+                    <p>West Paw Zogoflex Hurley Dog Chew Toy - XSmall - Orange</p>
+                </a>
+            </div>
+            <div class="price">₹479</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/022517963760.jpg?v=1705570342" alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 5.0</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Zeus</a>
+                <a href="#">
+                    <p>Zeus Fitness Rope With Tennis Ball Tug Fetch Dog Toy</p>
+                </a>
+            </div>
+            <div class="price">₹675</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+        <div class="items-container" data-brand="Vitapol" data-shop="Small Animals" data-life="Adult" data-breed="Small"
+            data-type="Dry Food" data-price="462" data-subcategory="Hamster Food">
+            <div class="img-scroll">
+                <img src="https://headsupfortails.com/cdn/shop/files/BARKBUTLERPOOKIETHEDRAGON-L4.jpg?v=1709557236"
+                    alt="">
+                <div class="review-star">
+                    <p><i class="fa-solid fa-star"></i> 4.95</p>
+                </div>
+            </div>
+            <div class="scroll-txt">
+                <a href="#">Barkbutler</a>
+                <a href="#">
+                    <p>Barkbutler Pookie The Dragon Squeaky Plush Dog Toy</p>
+                </a>
+            </div>
+            <div class="price">₹849</div>
+            <div class="scroll-tag">
+                <div class="view">Add to cart</div>
+                <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div id="cart-overlay" class="cart-overlay hidden">
+        <div class="cart-drawer" id="cart-drawer">
+            <div class="cart-header">
+                <h3>🛒 Cart</h3>
+                <button class="close-btn" onclick="closeCart()">×</button>
+            </div>
+            <div class="empty-cart-container">
+                <div class="empty-cart-border">
+                    <p id="empty-cart-msg" class="empty-cart">🛒 Your cart is empty.</p>
+                </div>
+            </div>
+            <ul id="cart-items">
+                <!-- Example Item (to be generated dynamically with JS) -->
+                <li class="cart-item">
+                    <div class="item-info">
+                        <div class="item-title">Product Name</div>
+                        <div>₹499</div>
+                        <div class="qty-controls">
+                            <button class="qty-btn" onclick="changeQty(0, -1)">−</button>
+                            <span>1</span>
+                            <button class="qty-btn" onclick="changeQty(0, 1)">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-btn" onclick="removeItem(0)">🗑️</button>
+                </li>
+            </ul>
+            <p id="cart-total">Total: ₹0</p>
+            <div class="checkout">
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="wishlist-overlay" class="cart-overlay hidden">
+        <div class="cart-drawer" id="wishlist-drawer">
+            <div class="cart-header">
+                <h3>💖 Wishlist</h3>
+                <button class="close-btn" onclick="closeWishlist()">×</button>
+            </div>
+
+            <div class="empty-cart-container">
+                <div class="empty-cart-border">
+                    <p id="empty-wishlist-msg" class="empty-cart">💖 Your wishlist is empty.</p>
+                </div>
+            </div>
+
+            <ul id="wishlist-items">
+                <!-- Example Item (to be generated dynamically with JS) -->
+                <li class="cart-item">
+                    <div class="item-info">
+                        <div class="item-title">Wishlist Product</div>
+                        <button class="remove-btn" onclick="removeWishlistItem(0)">🗑️</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="selection-overlay hidden" id="selection-overlay">
+        <div class="selection-drawer" id="selection-drawer">
+            <div class="selection-filter">
+                <div class="drawer-header">
+                    <h4>Filter</h4>
+                    <p>20 Products</p>
+                </div>
+                <button class="drawer-close" id="drawer-close-btn">&times;</button>
+            </div>
+            <ul id="selection-items">
+                <li class="selection-item">
+                    <div class="item-title" data-target="brand-options">Brand</div>
+                    <div class="item-options" id="brand-options">
+                        <p>Zeus<span class="close-icon hidden">✕</span></p>
+                        <p>Barkbutler<span class="close-icon hidden">✕</span></p>
+                        <p>West Paw<span class="close-icon hidden">✕</span></p>
+                        <p>Pet Stages<span class="close-icon hidden">✕</span></p>
+                        <p>Chuckit!<span class="close-icon hidden">✕</span></p>
+                        <p>Hasbro<span class="close-icon hidden">✕</span></p>
+                        <p>JOYSER<span class="close-icon hidden">✕</span></p>
+                        <p>JW Pet<span class="close-icon hidden">✕</span></p>
+                        <p>Zippy Paws<span class="close-icon hidden">✕</span></p>
+                        <p>Paws For Earth<span class="close-icon hidden">✕</span></p>
+                        <p>Petsport<span class="close-icon hidden">✕</span></p>
+                        <p>Natrapet<span class="close-icon hidden">✕</span></p>
+                        <p>Outward Hound<span class="close-icon hidden">✕</span></p>
+                        <p>M-Pets<span class="close-icon hidden">✕</span></p>
+                        <p>KONG<span class="close-icon hidden">✕</span></p>
+                        <p>FOFOS<span class="close-icon hidden">✕</span></p>
+                        <p>Trixie<span class="close-icon hidden">✕</span></p>
+                        <p>Dash Dog<span class="close-icon hidden">✕</span></p>
+                        <p>Tail Lovers Company<span class="close-icon hidden">✕</span></p>
+                        <p>Heads Up For Tails<span class="close-icon hidden">✕</span></p>
+                    </div>
+                </li>
+                <li class="selection-item">
+                    <div class="item-title" data-target="shop-options">Shop For</div>
+                    <div class="item-options" id="shop-options">
+                        <p>Dog<span class="close-icon hidden">✕</span></p>
+                    </div>
+                </li>
+                <li class="selection-item">
+                    <div class="item-title" data-target="life-options">Life Stage</div>
+                    <div class="item-options" id="life-options">
+                        <p>Puppy<span class="close-icon hidden">✕</span></p>
+                        <p>Adult<span class="close-icon hidden">✕</span></p>
+                        <p>Senior<span class="close-icon hidden">✕</span></p>
+                    </div>
+                </li>
+                <li class="selection-item">
+                    <div class="item-title" data-target="breed-options">Breed Size</div>
+                    <div class="item-options" id="breed-options">
+                        <p>Small<span class="close-icon hidden">✕</span></p>
+                        <p>Medium<span class="close-icon hidden">✕</span></p>
+                        <p>Large<span class="close-icon hidden">✕</span></p>
+                    </div>
+                </li>
+                <li class="selection-item">
+                    <div class="item-title" data-target="type-options">Product Type</div>
+                    <div class="item-options" id="type-options">
+                        <p>Toy<span class="close-icon hidden">✕</span></p>
+                    </div>
+                </li>
+                <li class="selection-item">
+                    <div class="item-title" data-target="price-options">Price</div>
+                    <div class="item-options" id="price-options">
+                        <p>INR 10 - INR 300<span class="close-icon hidden">✕</span></p>
+                        <p>INR 301 - INR 500<span class="close-icon hidden">✕</span></p>
+                        <p>INR 501 - INR 1000<span class="close-icon hidden">✕</span></p>
+                        <p>INR 1001 - INR 2000<span class="close-icon hidden">✕</span></p>
+                        <p>INR 2000+<span class="close-icon hidden">✕</span></p>
+                    </div>
+                </li>
+                <li class="selection-item">
+                    <div class="item-title" data-target="subcategory-options">Sub Category</div>
+                    <div class="item-options" id="subcategory-options">
+                        <p>Balls<span class="close-icon hidden">✕</span></p>
+                        <p>Chew Toys<span class="close-icon hidden">✕</span></p>
+                        <p>Crinkle Toys<span class="close-icon hidden">✕</span></p>
+                        <p>Fetch Toys<span class="close-icon hidden">✕</span></p>
+                        <p>Interactive Toys<span class="close-icon hidden">✕</span></p>
+                        <p>Plush Toys<span class="close-icon hidden">✕</span></p>
+                        <p>Rope Toys<span class="close-icon hidden">✕</span></p>
+                        <p>Squeaker Toys<span class="close-icon hidden">✕</span></p>
+                    </div>
+                </li>
+            </ul>
+            <div class="continue">
+                <a href="">Clear All</a>
+                <div class="continue-btn">Continue</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="outer-disclaimer">
+        <div class="inner-disclaimer">
+            <h4>DISCLAIMER</h4>
+            <p>It has come to our attention that a rogue website <a href="">https://www.headsupfortailsus.com</a> is
+                misrepresenting itself and wrongfully using the domain name. Please be advised that <a
+                    href="">https://headsupfortails.com</a> <a href="">https://huft.sg</a> and <a
+                    href="">https://huftkuwait.com</a> are the only authentic and official websites. We are actively
+                investigating the matter and will take appropriate legal action.</p>
+        </div>
+    </div>
+
+    <div class="footer-content-container">
+        <div class="footer-content-inner-container">
+            <div class="footer-content">
+                <h4>ONLINE SHOPPING</h4>
+                <ul>
+                    <li><a href="">Dogs</a></li>
+                    <li><a href="">Cats</a></li>
+                    <li><a href="">Small Animals</a></li>
+                    <li><a href="">Personalised Items</a></li>
+                    <li><a href="">HUFT Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">FAQs & Exchange Policy</a></li>
+                    <li><a href="">Terms Of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Franchise</a></li>
+                    <li><a href="">Singapore</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>EXPLORE</h4>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Awards</a></li>
+                    <li><a href="">Store Locator</a></li>
+                    <li><a href="">Pet Spa</a></li>
+                    <li><a href="">Birthday Club🎁</a></li>
+                    <li><a href="">HUFT Foundation</a></li>
+                    <li><a href="">Customer Love🧡</a></li>
+                    <li><a href="">Community</a></li>
+                </ul>
+            </div>
+            <div class="app-download">
+                <h4>DOWNLOAD HUFT APP</h4>
+                <div class="store-buttons">
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/play_store.png?v=1683527854"
+                        alt="Google Play">
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/app_store.png?v=1683527854"
+                        alt="App Store">
+                </div>
+
+                <div class="newsletter">
+                    <h3>LEAVE YOUR EMAIL AND GET OFFERS</h3>
+                    <form>
+                        <input type="email" placeholder="Enter Your Email Address" required>
+                        <input type="submit" class="arrow" value="➔">
+                        <!-- </div> -->
+                    </form>
+                    <p>
+                        Pets are at the heart of everything we do here, they make our lives whole. Subscribe to our
+                        Newsletter
+                        and receive special promotions and insider information about upcoming collections.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer-social-icons">
+        <div class="middle-social-icons">
+            <div class="inner-social-icons">
+                <div class="outer-deal">
+                    <div class="img-deal">
+                        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Group_150_2d42796c-3277-4c85-b41b-3a76d5cf6321.png?v=1653568401"
+                            alt="">
+                    </div>
+                    <div class="txt-deal">
+                        <p class="bold">Free Shipping</p>
+                        <p>On all orders above ₹699</p>
+                    </div>
+                </div>
+                <div class="outer-deal">
+                    <div class="img-deal">
+                        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Group_151_cd7ef98c-0d0b-4ea2-af76-4f33e990e8f8.png?v=1653568412"
+                            alt="">
+                    </div>
+                    <div class="txt-deal">
+                        <p class="bold">Free Returns</p>
+                        <p>Within 7 days(T&Cs Apply)</p>
+                    </div>
+                </div>
+                <div class="outer-deal">
+                    <div class="img-deal">
+                        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Group_152_82b7d0d9-ba2c-4d1a-8c3a-2cad0ec1a0bc.png?v=1653568427"
+                            alt="">
+                    </div>
+                    <div class="txt-deal">
+                        <p class="bold">Best Deals</p>
+                        <p>On Pet Products</p>
+                    </div>
+                </div>
+                <div class="outer-deal">
+                    <div class="img-deal">
+                        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Group_153_983329f5-dbb5-4893-8254-404de44f0486.png?v=1653568437"
+                            alt="">
+                    </div>
+                    <div class="txt-deal">
+                        <p class="bold">We Support</p>
+                        <p>Monday-Saturday,9am to 9pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer-popular-searches">
+        <div class="middle-popular-searches">
+            <div class="inner-popular-searches">
+                <div class="links">
+                    <span>POPULAR SEARCHES</span> <a href="">Collars, Leashes & Harnesses</a> | <a href="">Dog
+                        Food</a>
+                    | <a href="">Treats, Biscuits and Chews</a> | <a href="">Royal Canin</a> | <a href="">Name
+                        Tags</a>
+                    | <a href="">Harnesses</a> | <a href="">Beds</a> | <a href="">Dog Toys</a> | <a href="">HUFT
+                        Offers</a> | <a href="">Dog Clothes</a> | <a href="">Royal Canin Dog Food</a> | <a href="">Dog
+                        Accessories</a> | <a href="">Dry Dog Food</a> | <a href="">Collars and Leashes</a> | <a
+                        href="">Cat Products</a> | <a href="">Dog Grooming</a> | <a href="">Dog Bedding</a> | <a
+                        href="">Dog Bowls</a> | <a href="">Dog T-shirts & Shirts</a> | <a href="">Personalised
+                        Collars</a> | <a href="">Dog Collars</a> | <a href="">Chew Toys</a> | <a href="">Dog
+                        Bandanas</a> | <a href="">Dog Products</a> | <a href="">Pedigree</a> | <a href="">Farmina</a> |
+                    <a href="">Dog Party Wear</a> | <a href="">Cat Food</a> | <a href="">Cat Litter &
+                        Accessories</a> |
+                    <a href="">Puppy Food</a> | <a href="">Dog Shoes & Socks</a> | <a href="">Dog Brushes &
+                        Combs</a> |
+                    <a href="">Interactive Toys</a> | <a href="">Furniture & Scratchers</a> | <a href="">Cat
+                        Toys</a> |
+                    <a href="">Shampoos & Conditioners</a> | <a href="">Bow Ties</a> | <a href="">Crates &
+                        Carriers</a>
+                    | <a href="">Pet Mats</a> | <a href="">Dog Treats</a> | <a href="">Cat Treats</a> | <a href="">Tick
+                        Shampoo For Dogs</a> | <a href="">Pet store near me</a> | <a href="">Pet Spa Near me</a> |
+                    <a href="">Dog Kurta</a> | <a href="">Dog Sherwani</a>
+                    <br><br>
+                    <span>SHOP BY BREED</span> <a href="">German Shepherd</a> | <a href="">Shih Tzu</a> | <a
+                        href="">Labrador Retriever</a> | <a href="">Beagle</a> | <a href="">Husky</a> | <a
+                        href="">Golden Retriever</a> | <a href="">Pug</a> | <a href="">Indies</a>
+                </div>
+                <div class="add">
+                    <span>HEAD OFFICE ADDRESS</span> Earth Paws Private Limited, First Floor, Plot No. 34,
+                    Institutional
+                    Area, Sector-32, Gurugram, Haryana-122001
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer-social-icons">
+        <div class="middle-social-icons">
+            <div class="inner-social-icons">
+                <div class="copyright">
+                    © 2025, Earth Paws Private Limited. All Rights Reserved.
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Wrapper -->
+    <!-- Success/Error Modal -->
+    <!-- Animated Modal -->
+    <div id="cart-modal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal-btn">&times;</span>
+            <img id="modal-product-image" src="" alt="Product" class="modal-product-img" />
+            <p id="modal-message">Item added to cart!</p>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const drawerOverlay = document.getElementById("selection-overlay");
+            const drawer = document.getElementById("selection-drawer");
+            const closeBtn = document.getElementById("drawer-close-btn");
+            const continueBtn = document.querySelector(".continue-btn");
+            const clearAllBtn = document.querySelector(".continue a");
+
+            const selectedFilters = {};
+
+            // ===== Map between filter section ID and product data attribute =====
+            const filterAttrMap = {
+                "brand-options": "brand",
+                "shop-options": "shop",
+                "life-options": "life",
+                "breed-options": "breed",
+                "type-options": "type",
+                "price-options": "price",
+                "subcategory-options": "subcategory"
+            };
+
+            // ===== Open Drawer =====
+            document.querySelectorAll(".selection-div a").forEach(btn => {
+                btn.addEventListener("click", e => {
+                    e.preventDefault();
+                    drawerOverlay.classList.remove("hidden");
+                    drawer.classList.add("open");
+
+                    const key = btn.innerText.trim().toLowerCase().replace(/\s+/g, "-");
+                    const section = document.getElementById(`${key}-options`);
+                    if (section) section.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+
+            // ===== Close Drawer =====
+            const closeDrawer = () => {
+                drawerOverlay.classList.add("hidden");
+                drawer.classList.remove("open");
+            };
+
+            drawerOverlay.addEventListener("click", e => {
+                if (e.target === drawerOverlay) closeDrawer();
+            });
+
+            closeBtn?.addEventListener("click", closeDrawer);
+            document.addEventListener("keydown", e => {
+                if (e.key === "Escape") closeDrawer();
+            });
+
+            // ===== Filter Selection =====
+            document.querySelectorAll(".item-options p").forEach(p => {
+                const closeIcon = p.querySelector(".close-icon");
+
+                const toggle = (on) => {
+                    const wrapper = p.closest(".item-options");
+                    const categoryId = wrapper?.id;
+                    const value = p.textContent.replace("✕", "").trim();
+
+                    if (!selectedFilters[categoryId]) selectedFilters[categoryId] = new Set();
+
+                    if (on) {
+                        p.classList.add("selected");
+                        closeIcon?.classList.remove("hidden");
+                        selectedFilters[categoryId].add(value);
+                    } else {
+                        p.classList.remove("selected");
+                        closeIcon?.classList.add("hidden");
+                        selectedFilters[categoryId].delete(value);
+                        if (selectedFilters[categoryId].size === 0) {
+                            delete selectedFilters[categoryId];
+                        }
+                    }
+                };
+
+                p.addEventListener("click", (e) => {
+                    if (e.target === closeIcon) return;
+                    const isSelected = p.classList.contains("selected");
+                    toggle(!isSelected);
+                });
+
+                closeIcon?.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    toggle(false);
+                });
+            });
+
+            // ===== Apply Filters =====
+            continueBtn?.addEventListener("click", () => {
+                const allProducts = document.querySelectorAll(".items-container");
+
+                allProducts.forEach(product => {
+                    let visible = true;
+
+                    for (const categoryId in selectedFilters) {
+                        const attr = filterAttrMap[categoryId];
+                        const selectedValues = selectedFilters[categoryId];
+                        let productVal = product.dataset[attr] || "";
+
+                        if (attr === "price") {
+                            const price = parseFloat(productVal);
+                            const match = [...selectedValues].some(val => {
+                                const range = val.match(/(\d+)/g);
+                                if (!range) return false;
+                                const [min, max] = range.map(Number);
+                                return price >= min && price <= max;
+                            });
+                            if (!match) {
+                                visible = false;
+                                break;
+                            }
+                        } else {
+                            const match = [...selectedValues].some(val =>
+                                productVal.toLowerCase().includes(val.toLowerCase())
+                            );
+                            if (!match) {
+                                visible = false;
+                                break;
+                            }
+                        }
+                    }
+
+                    product.style.display = visible ? "block" : "none";
+                });
+
+                closeDrawer();
+            });
+
+            // ===== Clear All =====
+            clearAllBtn?.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                for (let key in selectedFilters) delete selectedFilters[key];
+
+                document.querySelectorAll(".item-options p").forEach(p => {
+                    p.classList.remove("selected");
+                    p.querySelector(".close-icon")?.classList.add("hidden");
+                });
+
+                document.querySelectorAll(".items-container").forEach(product => {
+                    product.style.display = "block";
+                });
+            });
+        });
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+<script src="corousel.js"></script>
+<script src="cart-wishlist.js"></script>
+
+</html>
