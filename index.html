@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heads Up For Tails</title>
+    <link rel="icon"
+        href="//headsupfortails.com/cdn/shop/files/favicon.png?crop=center&height=32&v=1667987456&width=32">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement">
+        <a href="#">Toys that make tails wag!</a>
+    </div>
+
+    <!-- Header with Logo, Search, Buttons -->
+    <div class="main-header">
+        <div class="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/logo_1.svg?v=1709198253" alt="HUFT Logo">
+        </div>
+        <div class="search-box-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="" id="search-input">
+        </div>
+        <div class="header-buttons">
+            <a href="login-signup-page.html"><button class="login-btn" id="login-btn">Login/Sign Up</button></a>
+            <span class="cart-icon" id="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count" class="cart-count-badge">0</span>
+            </span>
+            <span class="pincode"><i class="fa-solid fa-location-dot"></i>110001</span>
+            <span class="wishlist-icon" id="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+                <span id="wishlist-count" class="cart-count-badge">0</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="dropdown-header">
+        <ul>
+            <li class="drop">
+                <a class="bottom-boreder" href="#">Dogs <span><i class="fa-solid fa-angle-down"></i></span></a>
+                <div class="dropdown-menu">
+                    <div class="menu-heading">
+                        <h2>Shop For</h2>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="menu-item">
+                            <a href="dog-food.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/food_43cf05d7-fa03-4b9b-8ec6-8f8daef7d34c.png?v=1741065624"
+                                    alt="">
+                                <p>Food</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-treat.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/treats_c65e2ef8-2b9f-40ff-82f9-b04f11b7ea0d.png?v=1741065624"
+                                    alt="">
+                                <p>Treats</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-walk.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/walk_essentials_bc861461-628c-4524-a947-49aa5fb3a044.png?v=1741065624"
+                                    alt="">
+                                <p>Walk Essentials</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-grooming.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/grooming_6ff30a58-75b8-4e43-b35d-75fee30996c8.png?v=1741065624"
+                                    alt="">
+                                <p>Grooming</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-bowls.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/bowls_diners.png?v=1741065624"
+                                    alt="">
+                                <p>Bowls and Dinners</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-toys.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/toys_ff3e9cc4-1bd8-4338-b81c-802161bc6505.png?v=1741065624"
+                                    alt="">
+                                <p>Toys</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-clothes.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/clothing_accessories_7b533b21-54e5-44f8-833c-dbcc4348a49a.png?v=1741065624"
+                                    alt="">
+                                <p>Clothing & Accessories</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-travel.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/travel_supplies_35d150ef-801a-444f-a988-0536ee547572.png?v=1741065624"
+                                    alt="">
+                                <p>Travel Supplies</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="dog-health.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/health_hygiene.png?v=1741065625"
+                                    alt="">
+                                <p>Health & Hygiene</p>
+                            </a>
+                        </div>
+                    </div>
+            </li>
+            <li class="drop">
+                <a class="bottom-boreder" href="#">Cats <span><i class="fa-solid fa-angle-down"></i></span></a>
+                <div class="dropdown-menu">
+                    <div class="menu-heading">
+                        <h2>Shop For</h2>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="menu-item">
+                            <a href="cat-food.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/food_b40e355f-035d-4804-a55d-a6132f7cc220.png?v=1741066010"
+                                    alt="">
+                                <p>Food</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-treat.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/treats_1f30fe66-9d90-4247-b3b8-c52703e78ddb.png?v=1741066010"
+                                    alt="">
+                                <p>Treats</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-litter.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/litter_supplies.png?v=1741066010"
+                                    alt="">
+                                <p>Litter & Supplies</p>
+                            </a>
+                        </div>
+                        <!-- <div class="menu-item">
+                            <a href="cat-crater.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/crates_carriers_8f049b8e-ff05-40a8-a6a5-eebd8a098fd8.png?v=1741066010"
+                                    alt="">
+                                <p>Crates & Carriers</p>
+                            </a>
+                        </div> -->
+                        <div class="menu-item">
+                            <a href="cat-bed.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/trees_beds_scratchers.png?v=1741066010"
+                                    alt="">
+                                <p>Trees, Beds & Scratchers</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-toys.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/toys_ea3ecf45-bbf3-45bf-bdb1-17688b192f07.png?v=1741066010"
+                                    alt="">
+                                <p>Toys</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-grooming.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/grooming_49224043-c37f-43db-80a8-b0c7577b2505.png?v=1741066010"
+                                    alt="">
+                                <p>Grooming</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-accessories.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/collars_accessories.png?v=1741066009"
+                                    alt="">
+                                <p>Collars & Accessories</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="cat-bowls.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/bowls_diners_bee7eeec-2ec8-4657-bc5f-d3441d9c0eb2.png?v=1741066010"
+                                    alt="">
+                                <p>Bowls & Dinners</p>
+                            </a>
+                        </div>
+                    </div>
+            </li>
+            <li class="drop">
+                <a class="bottom-boreder" href="#">Small Animals <span><i class="fa-solid fa-angle-down"></i></span></a>
+                <div class="dropdown-menu">
+                    <div class="menu-heading">
+                        <h2>Shop For</h2>
+                    </div>
+                    <div class="menu-item-container">
+                        <div class="menu-item">
+                            <a href="small-animal.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/rabbits_24a0bf74-8db2-4622-8f22-fe245af6495d.png?v=1741066269"
+                                    alt="">
+                                <p>Rabbits</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="small-animal.html">
+                                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/hamsters_407f5853-1d48-41c0-bdfc-315f6c5dab90.png?v=1741066269"
+                                    alt="">
+                                <p>Hamsters</p>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="small-animal.html">
+                                <img src="https://bing.com/th/id/BCO.5fe03bab-35ca-4f89-9bfa-4fc47708ec6a.png" alt="">
+                                <p>Guinea pig</p>
+                            </a>
+                        </div>
+                    </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="image-slider">
+        <div class="slider-track">
+            <img src="" alt="" class="slide current" />
+            <img src="" alt="" class="slide next" />
+        </div>
+
+        <!-- Arrows -->
+        <button class="slider-btn prev" id="left">&#10094;</button>
+        <button class="slider-btn next" id="right">&#10095;</button>
+    </div>
+
+    <div class="summer-plans">
+        <div class="sec-1">
+            <h3>For Your Summer Plans</h3>
+            <p>Heading out or staying in? Don’t forget these!</p>
+        </div>
+        <div class="sec-2">
+            <a href="">
+                <div class="img-container">
+                    <div class="img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/01_dog_treats_web.webp?v=1748324532" alt="">
+                    </div>
+                    <h4>Dog Treats</h4>
+                </div>
+            </a>
+            <a href="">
+                <div class="img-container">
+                    <div class="img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/02_dog_food_web.webp?v=1748324572" alt="">
+                    </div>
+                    <h4>Dog Food</h4>
+                </div>
+            </a>
+            <a href="">
+                <div class="img-container">
+                    <div class="img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/03_cat_toys_web.webp?v=1748324613" alt="">
+                    </div>
+                    <h4>Cat Toys</h4>
+                </div>
+            </a>
+            <a href="">
+                <div class="img-container">
+                    <div class="img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/04_cat_food_web.webp?v=1748324659" alt="">
+                    </div>
+                    <h4>Cat Food</h4>
+                </div>
+            </a>
+            <a href="">
+                <div class="img-container">
+                    <div class="img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/05_butter_milk_web.webp?v=1748324746"
+                            alt="">
+                    </div>
+                    <h4>Buttermilk</h4>
+                </div>
+            </a>
+            <a href="">
+                <div class="img-container">
+                    <div class="img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/06_ice_cream_web.webp?v=1748324512" alt="">
+                    </div>
+                    <h4>Ice Cream</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="offer-container">
+        <div class="offer-div">
+            <a href="">
+                <img src="https://headsupfortails.com/cdn/shop/files/strip_01_web_9c178cc7-b7a7-4775-81c4-f5ff34a1ad44.webp?v=1748250797"
+                    alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="brands-for-budget">
+        <div class="sec-1">
+            <h3>Brands For Every Budget</h3>
+            <p>Find them all at HUFT!</p>
+        </div>
+        <div class="sec-2">
+            <a href="">
+                <div class="brands-img-container">
+                    <div class="brands-img">
+                        <img src="https://headsupfortails.com/cdn/shop/files/rc_f9c1ec9f-a81d-460a-b70d-deb18a237d40.webp?v=1747819648"
+                            alt="">
+                    </div>
+                    <div class="brands-txt">
+                        FLAT 15% OFF
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="brands-img-container">
+                    <div class="brands-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/pedigree_web.webp?v=1748331740" alt="">
+                    </div>
+                    <div class="brands-txt">
+                        FLAT 15% OFF
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="brands-img-container">
+                    <div class="brands-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/orijen_ac21dc4b-35a8-48b2-8a23-dc23ebd03a90.webp?v=1747819671"
+                            alt=""></div>
+                    <div class="brands-txt">
+                        FLAT 15% OFF
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="brands-img-container">
+                    <div class="brands-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/sheba_846fb2bb-8d61-457a-88fe-14bcc9b27ebe.webp?v=1747819685"
+                            alt=""></div>
+                    <div class="brands-txt">
+                        FLAT 15% OFF
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="brands-img-container">
+                    <div class="brands-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/farmina_30e18b26-2bb3-4456-8f68-abec34b100ac.webp?v=1747819701"
+                            alt="">
+                    </div>
+                    <div class="brands-txt">
+                        FLAT 15% OFF
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="brands-img-container">
+                    <div class="brands-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/whiskas_8c17077f-d4d4-4b99-96c8-aa5ed3271c08.webp?v=1747819717"
+                            alt="">
+                    </div>
+                    <div class="brands-txt">
+                        FLAT 15% OFF
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="serving">
+        <div class="sec-1">
+            <h3>Now Serving: Meowsi by HUFT!</h3>
+            <p>Broth | Treats | Pâté | Mousse</p>
+        </div>
+        <div class="outer-serving">
+            <a href="">
+                <div class="serving-img-container">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/m_01_web_d3785bf8-fd42-41f2-a1b4-ead0cdc6ec52.webp?v=1746859649"
+                            alt=""></div>
+                    <div class="serving-txt">
+                        <h4>Food & Treats for Cats</h4>
+                        <p>Starting at ₹99</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/m_web_f7586592-6d16-4a1a-95d3-b2f4e4884758.webp?v=1747819763"
+                            alt=""></div>
+                    <div class="serving-txt">
+                        <h4>Daily Treats</h4>
+                        <p>Delicious & nutritious!</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/m_03.webp?v=1746775750" alt=""></div>
+                    <div class="serving-txt">
+                        <h4>Hydrating Broth</h4>
+                        <p>Boosts their water intake!</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/m_04_9f59ed54-56a6-492e-9603-6471f7cddec6.webp?v=1746775910"
+                            alt=""></div>
+                    <div class="serving-txt">
+                        <h4>Rich Pâté & Mousse</h4>
+                        <p>Easy to eat (and love)!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="offer-container">
+        <div class="offer-div">
+            <a href="">
+                <img src="https://headsupfortails.com/cdn/shop/files/strip_02_web.webp?v=1746781817" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="serving">
+        <div class="sec-1">
+            <h3>The Best We’ve Ever Made!</h3>
+            <p>0% Preservatives | 100% Natural | 1000% Love</p>
+        </div>
+        <div class="outer-serving">
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/s_01_f94d7f45-d2b3-4bc3-83eb-749d971f26bc.webp?v=1746776143"
+                            alt=""></div>
+                    <div class="serving-txt" style="background-color: #102242;">
+                        <h4>Balanced Meals & Treats</h4>
+                        <p>Starting at ₹99 only</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/s_02_6dcb9b4f-06e1-4290-8cc6-c53aace892ca.webp?v=1746776307"
+                            alt=""></div>
+                    <div class="serving-txt" style="background-color: #102242;">
+                        <h4>Wholesome, Like Home!</h4>
+                        <p>100% Natural | 0% Preservatives</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/mob_app.webp?v=1747992361" alt=""></div>
+                    <div class="serving-txt" style="background-color: #102242;">
+                        <h4>Super-Snack of Summer</h4>
+                        <p>Hydration with nutrition</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/s_04_fef47cca-fecc-4eea-a414-4c8f0e2420b3.webp?v=1746776472"
+                            alt=""></div>
+                    <div class="serving-txt" style="background-color: #102242;">
+                        <h4>For Stronger Bones & Joints</h4>
+                        <p>Just 1 scoop every day</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="treat-bar">
+        <div class="sec-1">
+            <h3>Welcome To The Treat Bar</h3>
+            <p>Today's specials: Summer Fruits!</p>
+        </div>
+        <div class="outer-serving" style="padding-bottom: 30px;">
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/saras_treats_web.webp?v=1748603099" alt=""
+                            style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Dehydrated Treats</h4>
+                        <p>Available in 10+ variants ></p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/t_02_bf84592d-cd52-46fc-82f8-8121072f28ac.webp?v=1747399823"
+                            alt="" style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Jam-Filled Treats</h4>
+                        <p>Only at ₹249 ></p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/t_03_28839f2f-ae1a-4eef-b116-7a4043aa785c.webp?v=1747399862"
+                            alt="" style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Soft & Chewy Treats</h4>
+                        <p>Only at ₹199 ></p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/t_04_d5ffd3ff-4b53-4daf-a536-1ebe83c6e05d.webp?v=1747399905"
+                            alt="" style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Crunchy Treats</h4>
+                        <p>Only at ₹299 ></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="serving">
+        <div class="sec-1">
+            <h3>New in Dash Dog!</h3>
+            <p>Experience summer in style & comfort </p>
+        </div>
+        <div class="outer-serving">
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/dd_01_web_7bd640e0-4d3c-4570-8b85-5f765fb3dee7.webp?v=1747720984"
+                            alt=""></div>
+                    <div class="serving-txt" style="background-color: #553F89;">
+                        <h4>Let’s Chase Fun!</h4>
+                        <p>NEW Walk Gear | Toys | Bowls</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/dd_02_web.webp?v=1747721085" alt=""></div>
+                    <div class="serving-txt" style="background-color: #553F89;">
+                        <h4>Toys</h4>
+                        <p>For engaging, active play</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/dd_03_web.webp?v=1747721085" alt=""></div>
+                    <div class="serving-txt" style="background-color: #553F89;">
+                        <h4>Walk Gear</h4>
+                        <p>Padded for maximum comfort</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/dd_04_web.webp?v=1747721085" alt=""></div>
+                    <div class="serving-txt" style="background-color: #553F89;">
+                        <h4>Bowls</h4>
+                        <p>For on-the-go breaks</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="serving">
+        <div class="sec-1">
+            <h3>Hearty = High Protein!</h3>
+            <p>Oven-Baked Food | Wet Food | Biscuits</p>
+        </div>
+        <div class="outer-serving">
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/h_01_66916086-dbd6-4d28-ad17-1460f74fe17a.webp?v=1746777974"
+                            alt=""></div>
+                    <div class="serving-txt" style="background-color: #BB0E2C;">
+                        <h4>Complete Nutrition for Dogs</h4>
+                        <p>Starting at ₹65 only</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/h_02_28b7f887-7dc3-421a-a99b-33e527f85ba0.webp?v=1746780128"
+                            alt=""></div>
+                    <div class="serving-txt" style="background-color: #BB0E2C;">
+                        <h4>Adult & Puppy Dry Food</h4>
+                        <p>60% meat recipe</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/h_03_20c3a4b4-7516-4239-981c-af89f49207da.webp?v=1746780140"
+                            alt=""></div>
+                    <div class="serving-txt" style="background-color: #BB0E2C;">
+                        <h4>Wet Food</h4>
+                        <p>Hydration with nutrition</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/h_04_be19a05f-7858-4327-81be-199759b4c82f.webp?v=1746780153"
+                            alt=""></div>
+                    <div class="serving-txt" style="background-color: #BB0E2C;">
+                        <h4>Biscuits</h4>
+                        <p>Chicken meets Superfoods</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="offer-container">
+        <div class="offer-div">
+            <a href=""><img src="https://headsupfortails.com/cdn/shop/files/strip_03_web.webp?v=1746781894" alt=""></a>
+        </div>
+    </div>
+
+    <div class="serving">
+        <div class="sec-1">
+            <h3>Bestsellers Under ₹399</h3>
+            <p>Priced small, loved big!</p>
+        </div>
+        <div class="outer-scroll-container">
+            <button class="scroll-btn left-btn hidden" id="leftBtn">&#10094;</button>
+            <div class="inner-scroll-container" id="carousel">
+                <!-- Repeat this block for more items -->
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/products/cattreatcrunchies_1.jpg?v=1739045626"
+                            alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Heads Up For Tails</a>
+                        <a href="#">
+                            <p>HUFT Cat Treats - Chicken Crunchies - 35 g</p>
+                        </a>
+                    </div>
+                    <div class="price">₹199</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/files/Sara_sbuttermilkcurved_b3dbbdd5-e335-4be3-88ea-22dc56216b5e.jpg?v=1747818034"
+                            alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Saras</a>
+                        <a href="#">
+                            <p>HUFT Saras Buttermilk Blend Bone Brot...</p>
+                        </a>
+                    </div>
+                    <div class="price">₹299</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/files/DSC_3602copy.jpg?v=1739040514" alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Heads Up For Tails</a>
+                        <a href="#">
+                            <p>HUFT Lady Buggs Plush With Catnip Toy For ...</p>
+                        </a>
+                    </div>
+                    <div class="price">₹249</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/files/DSC_3732_1ec9a5cc-ac58-48c9-ae85-a116f00807e4.jpg?v=1737613134"
+                            alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Tail Lovers Company</a>
+                        <a href="#">
+                            <p>TLC Dotted Textured Dumbbell Squeaky Chew ...</p>
+                        </a>
+                    </div>
+                    <div class="price">₹249</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/files/Desserttreats-Banoffee-100g_1.jpg?v=1728888209"
+                            alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Heads Up For Tails</a>
+                        <a href="#">
+                            <p>HUFT Dessert English Banoffee Pie Made Wit...</p>
+                        </a>
+                    </div>
+                    <div class="price">₹259</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/files/DSC_5650_adf4f151-2c7b-49e8-9080-b70a7f39c011.jpg?v=1739041186"
+                            alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Tail Lovers Company</a>
+                        <a href="#">
+                            <p>Healthy Dog Biscuits - Chicken and Cheddar Cheese...</p>
+                        </a>
+                    </div>
+                    <div class="price">₹299</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/files/DSC_1205_5a5f3013-08a1-4d9d-8b5b-3320f6e91207.jpg?v=1743594146"
+                            alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Tail Lovers Company</a>
+                        <a href="#">
+                            <p>TLC Dory Squeaky Plush Toy For Puppies &am..</p>
+                        </a>
+                    </div>
+                    <div class="price">₹299</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/files/HUFTTY920_3.jpg?v=1739040196" alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Heads Up For Tails</a>
+                        <a href="#">
+                            <p>HUFT Flufferfly Plush Toy With Catnip For ...</p>
+                        </a>
+                    </div>
+                    <div class="price">₹299</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/files/DSC_0857_902c1b65-98d5-4525-9e95-ded589ddea1e.jpg?v=1739041367"
+                            alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Heads Up For Tails</a>
+                        <a href="#">
+                            <p>HUFT Drama Queen Bandana For Dog - Pink</p>
+                        </a>
+                    </div>
+                    <div class="price">₹399</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div class="img-scroll">
+                        <img src="https://headsupfortails.com/cdn/shop/files/DSC_3795copy.jpg?v=1737609773" alt="">
+                        <div class="review-star">
+                            <p><i class="fa-solid fa-star"></i> 5.0</p>
+                        </div>
+                    </div>
+                    <div class="scroll-txt">
+                        <a href="#">Heads Up For Tails</a>
+                        <a href="#">
+                            <p>TLC Elephant Ring Squeaky Chew Toy For Dog...</p>
+                        </a>
+                    </div>
+                    <div class="price">₹349</div>
+                    <div class="scroll-tag">
+                        <div class="view">Add to cart</div>
+                        <div class="view" onclick="addToWishlist(this)">♡ Wishlist</div>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-btn right-btn" id="rightBtn">&#10095;</button>
+        </div>
+        <div class="indicators" id="indicators"></div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div id="cart-overlay" class="cart-overlay hidden">
+        <div class="cart-drawer" id="cart-drawer">
+            <div class="cart-header">
+                <h3>🛒 Cart</h3>
+                <button class="close-btn" onclick="closeCart()">×</button>
+            </div>
+            <div class="empty-cart-container">
+                <div class="empty-cart-border">
+                    <p id="empty-cart-msg" class="empty-cart">🛒 Your cart is empty.</p>
+                </div>
+            </div>
+            <ul id="cart-items">
+                <!-- Example Item (to be generated dynamically with JS) -->
+                <li class="cart-item">
+                    <div class="item-info">
+                        <div class="item-title">Product Name</div>
+                        <div>₹499</div>
+                        <div class="qty-controls">
+                            <button class="qty-btn" onclick="changeQty(0, -1)">−</button>
+                            <span>1</span>
+                            <button class="qty-btn" onclick="changeQty(0, 1)">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-btn" onclick="removeItem(0)">🗑️</button>
+                </li>
+            </ul>
+            <p id="cart-total">Total: ₹0</p>
+            <div class="checkout">
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="wishlist-overlay" class="cart-overlay hidden">
+        <div class="cart-drawer" id="wishlist-drawer">
+            <div class="cart-header">
+                <h3>💖 Wishlist</h3>
+                <button class="close-btn" onclick="closeWishlist()">×</button>
+            </div>
+
+            <div class="empty-cart-container">
+                <div class="empty-cart-border">
+                    <p id="empty-wishlist-msg" class="empty-cart">💖 Your wishlist is empty.</p>
+                </div>
+            </div>
+
+            <ul id="wishlist-items">
+                <!-- Example Item (to be generated dynamically with JS) -->
+                <li class="cart-item">
+                    <div class="item-info">
+                        <div class="item-title">Wishlist Product</div>
+                        <button class="remove-btn" onclick="removeWishlistItem(0)">🗑️</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="offer-container">
+        <div class="offer-div">
+            <a href=""><img src="https://headsupfortails.com/cdn/shop/files/strip_04_web.webp?v=1746781962" alt=""></a>
+        </div>
+    </div>
+
+    <div class="treat-bar">
+        <div class="sec-1">
+            <h3>A Day In Your Cat’s Life…</h3>
+            <p>And the goodies that make their day!</p>
+        </div>
+        <div class="outer-serving" style="padding-bottom: 30px;">
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/c_01_0455f8cb-5bd9-49a8-9a46-25f2c50957c3.webp?v=1746778930"
+                            alt="" style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Cat Treats - Starting at ₹80</h4>
+                        <p>Shop Now ></p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/c_04_7676d7f0-e17c-4680-b6c2-89de92926b50.webp?v=1746779070"
+                            alt="" style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Cat Trees - Discover More</h4>
+                        <p>Shop Now ></p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/c_03_e4afc602-aadd-447a-9389-1f8d3cdfe1e5.webp?v=1746779038"
+                            alt="" style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Cat Carriers - 20+ options</h4>
+                        <p>Shop Now ></p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/c_02_ac122684-90ff-452e-9409-c1e9ff5ea900.webp?v=1746778979"
+                            alt="" style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Cat Bowls - Starting at 299</h4>
+                        <p>Shop Now ></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="treat-bar">
+        <div class="sec-1">
+            <h3>Pawsitive News Alert!</h3>
+            <p>Sharing what’s new, with those who made it possible</p>
+        </div>
+        <div class="outer-serving" style="padding-bottom: 80px;">
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/st_01_web.webp?v=1746779538" alt=""
+                            style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Be Part of Our Birthday Club!</h4>
+                        <p>Discover how you and your pet can enjoy FLAT 15% OFF!</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/st_02_web.webp?v=1746779631" alt=""
+                            style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Pinky’s Top Picks</h4>
+                        <p>Our employee of the year with her top picks of the year!</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/st_03_web.webp?v=1746779661" alt=""
+                            style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Our Stores & Spas</h4>
+                        <p>100+ stores. 100+ happy places for pets!</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="serving-img-container" style="border-radius: 10px;">
+                    <div class="serving-img"><img
+                            src="https://headsupfortails.com/cdn/shop/files/st_04_web.webp?v=1746779726" alt=""
+                            style="border-radius: 10px;"></div>
+                    <div class="serving-txt" style="background-color: transparent; color: #222222;">
+                        <h4>Customer Love</h4>
+                        <p>17 years’ worth of love you have given us, that brought us here.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="treat-bar">
+        <div class="sec-1">
+            <h3>Come By Our Store…</h3>
+            <p>For a free water bowl for your streeties!</p>
+        </div>
+        <a href="">
+            <div class="offer-container" style="padding-bottom: 100px; border-bottom: 1px solid #c4c4c4;">
+                <div class="offer-div">
+                    <img src="https://headsupfortails.com/cdn/shop/files/water_bowl_web.webp?v=1746793054" alt="">
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="subscription-outer">
+        <div>
+            <h1 class="subcription-header">🧡 Pet Essentials – Kits, Bulk & Subscriptions</h1>
+        </div>
+
+        <!-- Starter Kits -->
+        <section>
+            <div class="section-intro">
+                <h2>🎁 Starter Kits for New Pets</h2>
+                <p>Everything you need in one box – great for new pet parents!</p>
+            </div>
+
+            <div class="bundle-grid">
+                <div class="bundle-card">
+                    <h3>🐶 Dog Starter Kit</h3>
+                    <ul>
+                        <li>🦴 Chew Toy or Plush Toy</li>
+                        <li>🍽️ Food & Water Bowls</li>
+                        <li>🐶 Leash & Collar / Harness</li>
+                        <li>🛏️ Starter Bedding or Mat</li>
+                        <li>🧼 Shampoo or Grooming Wipes</li>
+                        <li>🐕‍🦺 Custom Pet ID Tag</li>
+                        <li>🛍️ Branded Welcome Box</li>
+                    </ul>
+                    <p class="price">₹3,499</p>
+                    <button onclick="alert('Dog Starter Kit added to cart!')">Add to Cart</button>
+                </div>
+
+                <div class="bundle-card">
+                    <h3>🐱 Cat Starter Kit</h3>
+                    <ul>
+                        <li>🧶 Plush Mouse or Ball Toy</li>
+                        <li>🍽️ Food & Water Bowls</li>
+                        <li>😺 Breakaway Collar with Bell</li>
+                        <li>🛏️ Soft Mat or Hideaway Bed</li>
+                        <li>🧼 Dry Shampoo or Wipes</li>
+                        <li>🐈‍⬛ Custom Pet ID Tag</li>
+                        <li>🛍️ Branded Welcome Box</li>
+                    </ul>
+                    <p class="price">₹3,499</p>
+                    <button onclick="alert('Cat Starter Kit added to cart!')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bulk Discounts -->
+        <section>
+            <div class="section-intro">
+                <h2>📦 Bulk Purchase Discounts</h2>
+                <p>Save more when buying for multiple pets or stocking up!</p>
+            </div>
+
+            <div class="bulk-discount-grid">
+                <div class="bulk-card">
+                    <h3>🛒 Discount Calculator</h3>
+                    <label for="bulkQty">Quantity:</label>
+                    <input type="number" id="bulkQty" min="1" value="1" />
+                    <button onclick="calculateBulk()">Calculate</button>
+                    <div class="bulk-result" id="bulkResult">₹499 (₹499/item)</div>
+                </div>
+
+                <div class="bulk-card">
+                    <h3>📊 Pricing Tiers</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Quantity</th>
+                                <th>Price / Unit</th>
+                                <th>Note</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1–4</td>
+                                <td>₹499</td>
+                                <td>Standard Price</td>
+                            </tr>
+                            <tr>
+                                <td>5–9</td>
+                                <td>₹449</td>
+                                <td>10% Off</td>
+                            </tr>
+                            <tr>
+                                <td>10+</td>
+                                <td>₹399</td>
+                                <td>20% Off (Best Value)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscription Box -->
+        <section>
+            <div class="section-intro">
+                <h2>📬 Monthly Subscription Box – ₹799/mo</h2>
+                <p>Exciting monthly surprises delivered to your pet’s doorstep!</p>
+            </div>
+
+            <div class="subscription-content">
+                <div class="sub-card">
+                    <h3>🎁 What’s Inside?</h3>
+                    <ul>
+                        <li>🧸 1 Premium Toy</li>
+                        <li>🍪 1–2 Packs of Healthy Treats</li>
+                        <li>🛁 Grooming Sample</li>
+                        <li>🧾 Coupons & Training Tips</li>
+                    </ul>
+                </div>
+
+                <div class="sub-card">
+                    <h3>✨ Optional Add-ons</h3>
+                    <ul>
+                        <li>📏 Customization (Breed, Age, Size)</li>
+                        <li>🎉 Themed Boxes (Festivals, Birthdays)</li>
+                    </ul>
+                </div>
+
+                <div class="sub-cta">
+                    <h3>Why Subscribe?</h3>
+                    <ul>
+                        <li>✅ Expert-curated goodies</li>
+                        <li>✅ Surprise & joy every month</li>
+                        <li>✅ Perfect for gifting</li>
+                    </ul>
+                    <p class="sub-price">Only ₹799/month</p>
+                    <button onclick="window.location.href='subscribe.html'">Subscribe Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="outer-disclaimer">
+        <div class="inner-disclaimer">
+            <h4>DISCLAIMER</h4>
+            <p>It has come to our attention that a rogue website <a href="">https://www.headsupfortailsus.com</a> is
+                misrepresenting itself and wrongfully using the domain name. Please be advised that <a
+                    href="">https://headsupfortails.com</a> <a href="">https://huft.sg</a> and <a
+                    href="">https://huftkuwait.com</a> are the only authentic and official websites. We are actively
+                investigating the matter and will take appropriate legal action.</p>
+        </div>
+    </div>
+
+    <div class="footer-content-container">
+        <div class="footer-content-inner-container">
+            <div class="footer-content">
+                <h4>ONLINE SHOPPING</h4>
+                <ul>
+                    <li><a href="">Dogs</a></li>
+                    <li><a href="">Cats</a></li>
+                    <li><a href="">Small Animals</a></li>
+                    <li><a href="">Personalised Items</a></li>
+                    <li><a href="">HUFT Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">FAQs & Exchange Policy</a></li>
+                    <li><a href="">Terms Of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Franchise</a></li>
+                    <li><a href="">Singapore</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h4>EXPLORE</h4>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Awards</a></li>
+                    <li><a href="">Store Locator</a></li>
+                    <li><a href="">Pet Spa</a></li>
+                    <li><a href="">Birthday Club🎁</a></li>
+                    <li><a href="">HUFT Foundation</a></li>
+                    <li><a href="">Customer Love🧡</a></li>
+                    <li><a href="">Community</a></li>
+                </ul>
+            </div>
+            <div class="app-download">
+                <h4>DOWNLOAD HUFT APP</h4>
+                <div class="store-buttons">
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/play_store.png?v=1683527854"
+                        alt="Google Play">
+                    <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/app_store.png?v=1683527854"
+                        alt="App Store">
+                </div>
+
+                <div class="newsletter">
+                    <h3>LEAVE YOUR EMAIL AND GET OFFERS</h3>
+                    <form>
+                        <input type="email" placeholder="Enter Your Email Address" required>
+                        <input type="submit" class="arrow" value="➔">
+                        <!-- </div> -->
+                    </form>
+                    <p>
+                        Pets are at the heart of everything we do here, they make our lives whole. Subscribe to our
+                        Newsletter
+                        and receive special promotions and insider information about upcoming collections.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer-social-icons">
+        <div class="middle-social-icons">
+            <div class="inner-social-icons">
+                <div class="outer-deal">
+                    <div class="img-deal">
+                        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Group_150_2d42796c-3277-4c85-b41b-3a76d5cf6321.png?v=1653568401"
+                            alt="">
+                    </div>
+                    <div class="txt-deal">
+                        <p class="bold">Free Shipping</p>
+                        <p>On all orders above ₹699</p>
+                    </div>
+                </div>
+                <div class="outer-deal">
+                    <div class="img-deal">
+                        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Group_151_cd7ef98c-0d0b-4ea2-af76-4f33e990e8f8.png?v=1653568412"
+                            alt="">
+                    </div>
+                    <div class="txt-deal">
+                        <p class="bold">Free Returns</p>
+                        <p>Within 7 days(T&Cs Apply)</p>
+                    </div>
+                </div>
+                <div class="outer-deal">
+                    <div class="img-deal">
+                        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Group_152_82b7d0d9-ba2c-4d1a-8c3a-2cad0ec1a0bc.png?v=1653568427"
+                            alt="">
+                    </div>
+                    <div class="txt-deal">
+                        <p class="bold">Best Deals</p>
+                        <p>On Pet Products</p>
+                    </div>
+                </div>
+                <div class="outer-deal">
+                    <div class="img-deal">
+                        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Group_153_983329f5-dbb5-4893-8254-404de44f0486.png?v=1653568437"
+                            alt="">
+                    </div>
+                    <div class="txt-deal">
+                        <p class="bold">We Support</p>
+                        <p>Monday-Saturday,9am to 9pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer-popular-searches">
+        <div class="middle-popular-searches">
+            <div class="inner-popular-searches">
+                <div class="links">
+                    <span>POPULAR SEARCHES</span> <a href="">Collars, Leashes & Harnesses</a> | <a href="">Dog
+                        Food</a>
+                    | <a href="">Treats, Biscuits and Chews</a> | <a href="">Royal Canin</a> | <a href="">Name
+                        Tags</a>
+                    | <a href="">Harnesses</a> | <a href="">Beds</a> | <a href="">Dog Toys</a> | <a href="">HUFT
+                        Offers</a> | <a href="">Dog Clothes</a> | <a href="">Royal Canin Dog Food</a> | <a href="">Dog
+                        Accessories</a> | <a href="">Dry Dog Food</a> | <a href="">Collars and Leashes</a> | <a
+                        href="">Cat Products</a> | <a href="">Dog Grooming</a> | <a href="">Dog Bedding</a> | <a
+                        href="">Dog Bowls</a> | <a href="">Dog T-shirts & Shirts</a> | <a href="">Personalised
+                        Collars</a> | <a href="">Dog Collars</a> | <a href="">Chew Toys</a> | <a href="">Dog
+                        Bandanas</a> | <a href="">Dog Products</a> | <a href="">Pedigree</a> | <a href="">Farmina</a> |
+                    <a href="">Dog Party Wear</a> | <a href="">Cat Food</a> | <a href="">Cat Litter &
+                        Accessories</a> |
+                    <a href="">Puppy Food</a> | <a href="">Dog Shoes & Socks</a> | <a href="">Dog Brushes &
+                        Combs</a> |
+                    <a href="">Interactive Toys</a> | <a href="">Furniture & Scratchers</a> | <a href="">Cat
+                        Toys</a> |
+                    <a href="">Shampoos & Conditioners</a> | <a href="">Bow Ties</a> | <a href="">Crates &
+                        Carriers</a>
+                    | <a href="">Pet Mats</a> | <a href="">Dog Treats</a> | <a href="">Cat Treats</a> | <a href="">Tick
+                        Shampoo For Dogs</a> | <a href="">Pet store near me</a> | <a href="">Pet Spa Near me</a> |
+                    <a href="">Dog Kurta</a> | <a href="">Dog Sherwani</a>
+                    <br><br>
+                    <span>SHOP BY BREED</span> <a href="">German Shepherd</a> | <a href="">Shih Tzu</a> | <a
+                        href="">Labrador Retriever</a> | <a href="">Beagle</a> | <a href="">Husky</a> | <a
+                        href="">Golden Retriever</a> | <a href="">Pug</a> | <a href="">Indies</a>
+                </div>
+                <div class="add">
+                    <span>HEAD OFFICE ADDRESS</span> Earth Paws Private Limited, First Floor, Plot No. 34,
+                    Institutional
+                    Area, Sector-32, Gurugram, Haryana-122001
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer-social-icons">
+        <div class="middle-social-icons">
+            <div class="inner-social-icons">
+                <div class="copyright">
+                    © 2025, Earth Paws Private Limited. All Rights Reserved.
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer-footer">
+        <div class="footer-container">
+            <h1>Heads Up For Tails - India’s Most Trusted Pet Store</h1>
+            <p>Welcome to Heads Up For Tails, India's favourite pet store! As pet parents ourselves, we see pets as
+                part
+                of our family.</p>
+            <h2>Find A Nearby HUFT Store By Searching "Pet Store Near Me"</h2>
+            <p>We understand that sometimes you need to see, feel and experience products in person before making a
+                purchase. If you are searching for "pet store near me" or a "pet shop near me", your search ends
+                here.
+                We offer convenient dog and cat shopping at offline stores near you, where you can explore our range
+                of
+                products firsthand. Our dedicated staff at each pet store are there to assist you, providing expert
+                advice and personalised recommendations to meet your pet's needs. In addition to searching for “pet
+                store near me", you can even use our store locator tool. Finding the nearest Heads Up For Tails pet
+                store is easy. Simply enter your location, and you'll be directed to the closest pet store in your
+                area.
+            </p>
+            <h2>Our Story</h2>
+            <p>Our journey began with love for our pets and a desire to make their lives better. It’s the wagging
+                tails
+                and content purrs that inspired us to create products and services that cater to every pet’s needs.
+                From
+                nutritious pet food to fun toys and everything in between, we have got it all covered. Every single
+                product is created with your pet's well-being in mind, so they feel as loved and cared for as they
+                truly
+                deserve.</p>
+            <p>At Heads Up For Tails, we are defined by the science and heart behind every action. We take pride in
+                the
+                blend of innovation, quality and heaps of love in everything we offer. Being a team of passionate
+                pet
+                parents ourselves, we have years of research and continual upskilling behind our products. From
+                collaborating with animal healthcare and nutrition experts to establishing state-of-the-art research
+                and
+                manufacturing facilities, we work every day to keep redefining the standards of pet care across the
+                globe.</p>
+            <h2>Why Heads Up For Tails?</h2>
+            <p><b>Quality Assurance: </b>Our products undergo comprehensive tests to ensure they are nutritious and
+                meet
+                the highest quality standards.</p>
+            <p><b>Expertise:</b> Our team consists of pet enthusiasts and professionals who bring years of
+                experience to
+                cater to your pet's specific needs.</p>
+            <p><b>Innovative Solutions:</b> From interactive toys to nutritious treats, we have a wide selection of
+                products and services to keep your pets active, healthy, and happy.</p>
+            <p><b>Customer Satisfaction:</b> Your satisfaction is our priority. We offer the best service and
+                support.
+                We make sure that both you and your pet have an enjoyable experience every time you shop with us.
+            </p>
+            <p><b>Convenience:</b> You can order online or visit our store by searching for a pet store near me. We
+                provide you with the best pet care solutions.</p>
+            <h2>Heads Up For Tails - One Stop For All Your Pet’s Needs</h2>
+            <p>Heads Up For Tails is more than just an online pet shop – it’s a place for pet parents who want
+                nothing
+                but the best for their pets. From the moment you step into our stores or visit us online, you'll
+                find a
+                large variety of high-quality products and services designed specifically for all the needs of your
+                pet.
+                Be it the nutritious pet food to nourish their adventures, the delightful treats to be their reward
+                for
+                their good behaviour, the engaging toys to amuse them, or the stylish accessories to flaunt their
+                unique
+                personality, we are all over the store with everything you need to make sure your pets are happy and
+                healthy. Additionally, our professional grooming services are available to help your pets look and
+                feel
+                their best. It is a matter of choice for you to either shop for pet products online or physically
+                visit
+                the HUFT pet store near you. We are available both ways to meet your requirements.</p>
+            <h3>Pet Products</h3>
+
+            <p><b>For Dogs</b></p>
+            <p>From the specially formulated <a href="">dog food</a> and <a href="">dog treats</a> & biscuits that
+                help
+                them grow strong at every life stage to the fun and entertaining <a href="">dog toys</a> that keep
+                them
+                amused, we've got it all. In addition, when it is time to rest, we have comfortable <a href="">dog
+                    beds</a> and mats where your dog can rest and refresh. We also provide a wide variety of pet
+                grooming supplies, such as shampoos, conditioners, and flea treatments to help your dog look and
+                feel
+                great. Moreover, let's not overlook the fashionable <a href="">dog collars</a>, harnesses, leashes,
+                jackets, dog raincoats, and accessories that we have.</p>
+            <p><b>For Cats</b></p>
+            <p>From healthy <a href="">cat food</a> and <a href="">cat treats</a> to keep them lively and energetic,
+                to
+                sanitary <a href="">litter solutions</a> for hygiene , and <a href="">scratching posts</a> to
+                safeguard
+                your furniture, we are around the corner to assist you. Our cat supplies are top-notch and this
+                assures
+                that your cat gets the best that it can get. Heads Up For Tails gives you a collection that is
+                selected
+                by you and suits every part of your cat's joy and safety. Check our selection of <a href="">cat
+                    toys</a>, treats, grooming essentials, litter supplies, travel accessories, bowls, beds, and
+                collars.</p>
+            <p><b>For Small Animals</b></p>
+            <p>Heads Up For Tails offers a wide range of products for small pets like birds, rabbits, and guinea
+                pigs.
+                Our selection includes nutritious foods with essential roughage for digestive health. With options
+                tailored to each pet's needs, we make it easy to find the perfect products.</p>
+
+            <h3>Pet Services</h3>
+            <p>Heads Up For Tails boasts over 68 pet spa locations nationwide that provide expert grooming services
+                for
+                your beloved pets. Our professionally trained staff cares for your pet's comfort more than anything
+                else. They take good care of your pet and give attention to your pet throughout the grooming
+                process.
+            </p>
+            <p>Our trained professionals are dedicated to creating a stress-free grooming experience for your pets.
+                They
+                handle each pet with gentle care and attention and use their expertise to minimise any discomfort
+                your
+                pet may feel.</p>
+            <p>We offer a range of grooming services tailored to meet your pet's specific needs, including
+                breed-specific grooming that includes a bath, blow-dry, and haircut. Additionally, our skilled
+                groomers
+                can clip nails, clean ears, and provide gentle grooming around the eyes. We also offer a variety of
+                massages to promote relaxation and well-being.</p>
+
+            <h2>Top Pet Care Brands On Heads Up For Tails</h2>
+            <p>Your pets deserve nothing but the best, and at Heads Up For Tails, we're dedicated to providing just
+                that. Explore our extensive collection of premium pet food brands, including Farmina N&D, <a
+                    href="">Royal Canin</a>, Pedigree, Orijen, Acana, <a href="">Whiskas</a>, Drools, Sheba, Me O,
+                and
+                more. For those seeking fresh and wholesome options, don't miss out on Sara’s Wholesome Dog Food
+                range.
+            </p>
+            <p>Make playtime even more enjoyable with our selection of exciting pet toy brands, featuring favourites
+                like Heads Up For Tails, Dash Dog, Kong, Trixie, GiGwi, and many others. Whether your companion
+                prefers
+                a game of fetch or a plush toy to snuggle with, we have something for every pet's preference.</p>
+            <p>Pamper your pet with the best pet grooming brands available, ensuring they look and feel their best
+                every
+                day. Choose from top brands such as Isle of Dogs, Bubble Up, Wahl, Forcans, Skout’s Honor,
+                TropiClean,
+                Himalaya, M-Pets, Petkin, Virbac, and more to elevate their grooming experience.</p>
+
+            <h2>Where There Is A Pet, There Is HUFT</h2>
+            <p>With over 100+ pet stores and 80+ expert pet spas, Heads Up For Tails is your go-to destination for
+                everything your pets want and you need. Heads Up For Tails has a presence in over 20 cities across
+                India, including Delhi NCR, Mumbai, Bengaluru, Pune, Chennai, Chandigarh and more! A HUFT Store is
+                where
+                you will find a wide variety of food, treats, toys, accessories, bedding, grooming and more
+                essentials,
+                as well as spa services for your pet. It is an experience that you can have with your pet, as most
+                HUFT
+                Stores are in pet-friendly locations! To find a HUFT Store near you, all you need to do is search
+                “HUFT
+                pet store near me” online, or use the store locator tool on the Heads Up For Tails website.</p>
+
+            <h2>FAQs</h2>
+            <p><b>1. What services are available at the HUFT pet store near me?</b></p>
+            <p>A: Your nearest HUFT Store offers free home delivery on all orders, and 5000+ pet products to choose
+                from, including food, treats, bedding, toys, walk gear, accessories and much more! Many HUFT Stores
+                are
+                also HUFT Spas, where we offer a range of grooming services tailored to meet your pet's specific
+                needs,
+                including breed-specific grooming that includes a bath, blow-dry, and haircut. Additionally, our
+                gentle
+                groomers can clip nails, clean ears, and provide gentle grooming around the eyes. We also offer a
+                variety of massages to promote relaxation and holistic well-being.</p>
+            <p><b>2. How can I locate a HUFT pet store near me?</b></p>
+            <p>A: To find a HUFT Store near you, all you need to do is search “HUFT pet store near me” online, or
+                use
+                the store locator tool on the Heads Up For Tails website. Just select your city and find the one
+                closest
+                to you!</p>
+            <p><b>3. How many stores does Heads Up For Tails have?</b></p>
+            <p>A: Heads Up For Tails has 100+ pet stores and 80+ expert spas in 20 cities across India! Delhi,
+                Mumbai,
+                Bengaluru, Chennai, Pune, Chandigarh and more have multiple pet stores, so it becomes easy to find
+                one
+                closest and most convenient to you and your pet.</p>
+            <p><b>4. When did Heads Up For Tails start?</b></p>
+            <p>A: Heads Up For Tails was founded in 2008 by Rashi Sanon Narang. From starting out in a small room,
+                HUFT
+                is now a family of many across cities, and now even globally with our new store and website in
+                Singapore.
+            </p>
+            <p><b>5. How to give your dog a spa day?</b></p>
+            <p>A: If you are looking to give your dog a relaxing spa day and a refresh, you can book an appointment
+                at
+                your nearest HUFT Spa! Search "pet spa near me" or use the store locator tool on our website to find
+                one
+                closest to you. Select from a wide range of grooming services including breed-specific grooming that
+                includes a bath, blow-dry, and haircut. Additionally, our gentle groomers can clip nails, clean
+                ears,
+                and provide gentle grooming around the eyes. We also offer a variety of massages to promote
+                relaxation
+                and holistic well-being.</p>
+        </div>
+    </div>
+
+
+    <!-- Modal Wrapper -->
+    <!-- Success/Error Modal -->
+    <!-- Animated Modal -->
+    <div id="cart-modal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal-btn">&times;</span>
+            <img id="modal-product-image" src="" alt="Product" class="modal-product-img" />
+            <p id="modal-message">Item added to cart!</p>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+<script src="corousel.js"></script>
+<script src="cart-wishlist.js"></script>
+
+</html>
